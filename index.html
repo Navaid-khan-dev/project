@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <style>
+    /* Make the image fully responsive */
+
+
+
+
+    .fixa {
+      /* position: absolute; */
+      position: fixed;
+      /* z-index: 1; */
+      left: 59.5%;
+      top: 63px;
+      /* background: black; */
+    }
+  </style>
+</head>
+
+<body>
+  
+
+  <div id="demo" class="carousel" data-ride="carousel">
+    
+    <div class="carousel-inner">
+      <div class="carousel-item active text-center">
+        <img src="Bild1.png" alt="Los Angeles" height="800vh">
+      </div>
+      <div class="carousel-item text-center">
+        <img src="Bild2.png" alt="Chicago" height="800vh">
+
+      </div>
+      <div class="carousel-item text-center">
+        <img src="Bild3.png" alt="New York" height="800vh">
+
+      </div>
+      <div class="carousel-item text-center">
+        <canvas class="fixa" id="canvas" width="400" height="400">
+        </canvas>
+        <img src="Bild4_f.png" alt="New York" height="800vh">
+
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <!-- <span class="carousel-control-prev-icon" style="color: black;"></span> -->
+      <i class="fas fa-arrow-left fa-2x" style="color: black;"></i>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <!-- <span class="carousel-control-next-icon"></span> -->
+      <i class="fas fa-arrow-right fa-2x" style="color: black;"></i>
+    </a>
+  </div>
+
+
+  <script src="clock.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('.carousel').carousel({
+        interval: 5000
+      })
+    });
+  </script>
+
+</body>
+
+</html>
