@@ -24,12 +24,9 @@
 
 
     .fixa {
-      /* position: absolute; */
       position: fixed;
-      /* z-index: 1; */
       left: 59.5%;
       top: 63px;
-      /* background: black; */
     }
   </style>
 </head>
@@ -73,7 +70,8 @@
   <script type="text/javascript">
     $(document).ready(function() {
       $('.carousel').carousel({
-        interval: 5000
+        interval: 5000,
+        pause: "false"
       })
     });
   </script>
