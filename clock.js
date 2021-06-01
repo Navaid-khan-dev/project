@@ -1,6 +1,36 @@
+// function displayWindowSize() {
+//   // Get width and height of the window excluding scrollbars
+//   var w = document.documentElement.clientWidth;
+//   var h = document.documentElement.clientHeight
+//   displayWindowSize.w =w
+//   displayWindowSize.h = h
+  
+// }
+
+// // Attaching the event listener function to window's resize event
+// window.addEventListener("resize", displayWindowSize);
+
+// // Calling the function for the first time
+// displayWindowSize();
+
+// var w = document.documentElement.clientWidth;
+// var h = document.documentElement.clientHeight
+// console.log(h);
+// if (h >= 700 && h <= 1000) {
+//   varim = 6
+//   console.log(varim);
+//   console.log(h);
+// }
+// else {
+//   varim = 1;
+//   console.log(varim);
+//   console.log(h);
+
+// }
+
 var canvas = document.getElementById("canvas");
 var ctx = canvas.getContext("2d");
-var radius = canvas.height / 6;
+var radius = canvas.height / varim;
 ctx.translate(radius, radius);
 radius = radius * 0.90
 setInterval(drawClock, 1000);
