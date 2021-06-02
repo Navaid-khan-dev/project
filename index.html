@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Bootstrap Example</title>
+  <title>Project</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -11,136 +11,61 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
     integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+
+
   <style>
-    /* Make the image fully responsive */
-    #demo {
-      /* height:100vh; */
-    }
 
-    .this_me img {
-      max-width: 100%;
-      height: 100vh;
-    }
-
-
-
-    .fixa {
-      /* left: 59.5%; */
-      /* left: 70%; */
-      /* top: 63px; */
-      /* display: flex; */
-      position: fixed;
-
-      left: 50%;
-      top: 0%;
-      margin-top: 50px;
-      margin-left: 80px;
-      /*half the width*/
-
-    }
   </style>
-  <!-- <link rel="stylesheet" href="style.css"> -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media_queries.css">
+
 </head>
 
 <body>
+
 
 
   <div id="demo" class="carousel" data-ride="carousel">
 
     <div class="carousel-inner">
       <div class="carousel-item active text-center this_me">
-        <img src="Bild1.png" alt="Image1" >
+        <img src="Bild1.png" alt="Image1">
       </div>
       <div class="carousel-item text-center this_me">
         <img src="Bild2.png" alt="Image2">
 
       </div>
       <div class="carousel-item text-center this_me">
-        <img src="Bild3.png" alt="Image3"  >
+        <img src="Bild3.png" alt="Image3">
 
       </div>
       <div class="carousel-item  text-center this_me">
         <canvas class="fixa " id="canvas" width="400" height="400">
         </canvas>
-        <img src="imafe.png" alt="Image4">
 
+        <div class="mapouter">
+          <div class="gmap_canvas" id="map">
+          </div>
+          <!-- <div id="map"></div> -->
+          <!-- q=24.9135104,67.0826496 -->
+          <img src="imafe_2.png" alt="Image4">
+
+        </div>
       </div>
+      <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <!-- <span class="carousel-control-prev-icon" style="color: black;"></span> -->
+        <i class="fas fa-arrow-left fa-2x" style="color: black;"></i>
+      </a>
+      <a class="carousel-control-next" href="#demo" data-slide="next">
+        <!-- <span class="carousel-control-next-icon"></span> -->
+        <i class="fas fa-arrow-right fa-2x" style="color: black;"></i>
+      </a>
     </div>
-    <a class="carousel-control-prev" href="#demo" data-slide="prev">
-      <!-- <span class="carousel-control-prev-icon" style="color: black;"></span> -->
-      <i class="fas fa-arrow-left fa-2x" style="color: black;"></i>
-    </a>
-    <a class="carousel-control-next" href="#demo" data-slide="next">
-      <!-- <span class="carousel-control-next-icon"></span> -->
-      <i class="fas fa-arrow-right fa-2x" style="color: black;"></i>
-    </a>
-  </div>
 
-
-  <script src="window.js"></script>
-  <script type="text/javascript">
-    $(document).ready(function () {
-      $('.carousel').carousel({
-        interval: 5000,
-        pause: "false"
-      })
-
-    });
-    var h = document.documentElement.clientHeight;
-    console.log(h);
-
-    if (h >= 1200 && h < 1500) {
-      varim = 3
-      // console.log(varim);
-      // console.log(h);
-
-      document.getElementById("canvas").style.marginTop = 100 + 'px';
-
-      document.getElementById("canvas").style.marginLeft = 150 + 'px';
-    }
-    else if (h >= 1000) {
-      varim = 3.3
-      // console.log(varim);
-      // console.log(h);
-
-      document.getElementById("canvas").style.marginTop = 60 + 'px';
-      document.getElementById("canvas").style.marginLeft = 110 + 'px';
-    }
-    else if (h >= 850 && h < 1000) {
-      varim = 4
-      // console.log(varim);
-      // console.log(h);
-
-      document.getElementById("canvas").style.marginTop = 60 + 'px';
-      document.getElementById("canvas").style.marginLeft = 110 + 'px';
-    }
-    else if (h >= 680 && h < 850) {
-      varim = 5
-      // console.log(varim);
-      // console.log(h);
-
-      document.getElementById("canvas").style.marginTop = 60 + 'px';
-      document.getElementById("canvas").style.marginLeft = 90 + 'px';
-    }
-    else if (h >= 550 && h < 680) {
-      varim = 6
-      // console.log(varim);
-      // console.log(h);
-
-      document.getElementById("canvas").style.marginTop = 40 + 'px';
-      document.getElementById("canvas").style.marginLeft = 60 + 'px';
-    }
-    else if (h < 550) {
-      varim = 8
-      // console.log(varim);
-      // console.log(h);
-
-      document.getElementById("canvas").style.marginTop = 30 + 'px';
-      document.getElementById("canvas").style.marginLeft = 50 + 'px';
-    }
-  </script>
-
-  <script src="clock.js"></script>
+    <script src="location.js"></script>
+    <script src="canvas_and_corusal.js"></script>
+    <script src="clock.js"></script>
 
 
 </body>

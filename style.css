@@ -1,0 +1,80 @@
+.this_me img {
+  max-width: 100%;
+  height: 100vh;
+}
+
+
+
+.fixa {
+  position: fixed;
+  left: 50%;
+  top: 0%;
+  margin-top: 50px;
+  margin-left: 80px;
+  /*half the width*/
+
+}
+
+.mapouter {
+  /* text-align: right;
+    width: 600px;
+    height: 400px; */
+}
+
+.gmap_canvas {
+  position: absolute;
+  background: none !important;
+  width: 600px;
+  height: 800px;
+}
+
+.gmap_iframe {
+  /* position: fixed; */
+  width: 300px !important;
+  height: 300px !important;
+}
+
+
+
+#map {
+  height: 300px;
+  width: 350px;
+  border-radius: 10px;
+}
+
+
+
+.custom-map-control-button {
+  background-color: #fff;
+  border: 0;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.3);
+  margin: 10px;
+  padding: 0 0.5em;
+  font: 400 18px Roboto, Arial, sans-serif;
+  overflow: hidden;
+  height: 40px;
+  cursor: pointer;
+}
+
+.custom-map-control-button:hover {
+  background: #ebebeb;
+}
+
+#map>iframe {
+  /* left: 59.5%; */
+  /* left: 70%; */
+  /* top: 63px; */
+  /* display: flex; */
+  position: fixed;
+  /* width: 335px;
+  height: 270px;
+  left: 50%;
+  top: 0%;
+  margin-top: 340px;
+  margin-left: -220px; */
+  border: 2px solid #68b54e;
+  border-radius: 5px;
+  /*half the width*/
+}
+
