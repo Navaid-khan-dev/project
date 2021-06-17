@@ -1,11 +1,11 @@
 @media screen and (min-height: 1351px) {
-  #map>iframe {
+  #map_canv {
     display: none;
   }
 }
 
 @media screen and (max-height: 1350px) and (min-height: 1200px) {
-  #map>iframe {
+  #map_canvas {
     left: 50%;
     top: 0%;
     margin-left: -400px;
@@ -16,7 +16,7 @@
 }
 
 @media screen and (max-height: 1199px) and (min-height: 1130px) {
-  #map>iframe {
+  #map_canvas {
     left: 50%;
     top: 0%;
     margin-left: -400px;
@@ -27,7 +27,7 @@
 }
 
 @media screen and (max-height: 1129px) and (min-height: 1085px) {
-  #map>iframe {
+  #map_canvas {
     left: 50%;
     top: 0%;
     margin-left: -380px;
@@ -39,7 +39,7 @@
 
 
 @media screen and (max-height: 1084px) and (min-height: 1017px) {
-  #map>iframe {
+  #map_canvas {
     left: 50%;
     top: 0%;
     margin-left: -360px;
@@ -50,7 +50,7 @@
 }
 
 @media screen and (max-height: 1016px) and (min-height: 977px) {
-  #map>iframe {
+  #map_canvas {
     left: 50%;
     top: 0%;
     margin-left: -320px;
@@ -61,7 +61,7 @@
 }
 
 @media screen and (max-height: 976px) and (min-height: 890px) {
-  #map>iframe {
+  #map_canvas {
     left: 50%;
     top: 0%;
     margin-left: -320px;
@@ -72,7 +72,7 @@
 }
 
 @media screen and (max-height: 889px) and (min-height: 820px) {
-  #map>iframe {
+  #map_canvas {
     left: 50%;
     top: 0%;
     margin-left: -280px;
@@ -84,7 +84,7 @@
 
 
 @media screen and (max-height: 819px) and (min-height: 741px) {
-  #map>iframe {
+  #map_canvas {
     left: 50%;
     top: 0%;
     margin-left: -250px;
@@ -95,7 +95,7 @@
 }
 
 @media screen and (max-height: 740px) and (min-height: 712px) {
-  #map>iframe {
+  #map_canvas {
     left: 50%;
     top: 0%;
     margin-left: -250px;
@@ -108,7 +108,7 @@
 
 
 @media screen and (max-height: 711px) and (min-height: 650px) {
-  #map>iframe {
+  #map_canvas {
     left: 50%;
     top: 0%;
     margin-left: -230px;
@@ -119,7 +119,7 @@
 }
 
 @media screen and (max-height: 649px) and (min-height: 616px) {
-  #map>iframe {
+  #map_canvas {
     left: 50%;
     top: 0%;
     margin-left: -220px;
@@ -130,7 +130,7 @@
 }
 
 @media screen and (max-height: 615px) and (min-height: 570px) {
-  #map>iframe {
+  #map_canvas {
     left: 50%;
     top: 0%;
     margin-left: -200px;
@@ -141,7 +141,7 @@
 }
 
 @media screen and (max-height: 569px) {
-  #map>iframe {
+  #map_canvas {
     left: 50%;
     top: 0%;
     margin-left: -150px;
